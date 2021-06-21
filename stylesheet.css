@@ -195,11 +195,11 @@ a:link,a:visited,a:hover,a:active {
 
 .pickup_main {
   position: relative;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 
 .pickup_main img {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 .star1 {
@@ -447,7 +447,30 @@ a:link,a:visited,a:hover,a:active {
 
 /*----------------#news----------------------------------------------*/
 
+.article {
+  display: flex;
+  flex-direction: column;
+}
 
+.article li {
+  display: flex;
+  padding: 3rem 2rem;
+  border-top: 2px solid #28527a;
+}
+
+.article:last-child {
+  border-bottom: 2px solid #28527a;
+}
+
+.article p {
+  text-align: left;
+  margin: 0 2rem;
+}
+
+.article img {
+  width :30%;
+  object-fit: cover;
+}
 
 
 /*----------------#footer----------------------------------------------*/
