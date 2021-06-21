@@ -17,15 +17,13 @@ body {
   background-color: #fff;          /*背景を#f0f0f0*/
   color:   #28527a;                       /*文字色を #28527a*/
   font-family: YuGothic,'Yu Gothic',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Calibri','Arial';  
-  font-size: 1.44rem;                    /*フォントサイズをデフォルト14pに*/
-  line-height: 1.3;                     /*行の高さ指定,数値のみ*/
+  font-size: 1.44rem;                    /*フォントサイズをデフォルト14pに*/  
   text-decoration: none;                /*下線等無し*/
   letter-spacing: 0.1rem;             
 }
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 70px;
 }
 
 h3 {
@@ -36,7 +34,7 @@ a,p,dt,dd {
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 img {
@@ -66,9 +64,8 @@ a:link,a:visited,a:hover,a:active {
 
 .section-title {
   display: inline-block;
-  font-weight: bold;
   line-height: 1.1;
-  margin: 10rem 0 7rem 0;
+  margin: 12rem 0 5rem 0;
   color: #28527a;
   background-image: linear-gradient(transparent 70%, #fbeeac 70%);
 }
@@ -285,6 +282,12 @@ a:link,a:visited,a:hover,a:active {
   width: 50%;
 }
 
+.others {
+  border: 0.3rem dotted #8ac4d0;
+  border-radius: 6rem;
+  padding: 6em;
+}
+
 .others ul{
   display: flex;
   justify-content: space-around;
@@ -307,6 +310,7 @@ a:link,a:visited,a:hover,a:active {
 .facility_map {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10rem;
 }
 
 .facility_map img {
@@ -320,10 +324,129 @@ a:link,a:visited,a:hover,a:active {
 
 /*----------------#Opening_hours----------------------------------------------*/
 
+#info {
+  background-color: rgba(138, 196, 208,0.25);
+  padding-bottom: 12rem;
+}
 
+.list {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
 
+.day_tour {
+  width : 35%;
+  padding-bottom: 3rem;
+  border: 0.4rem solid #f4d160;
+  background-color: #fff;
+}
 
-/*----------------#contact----------------------------------------------*/
+.day_tour dt{
+  background-color: #f4d160;
+  padding: 1.5rem 0 1.5rem 0;
+  font-size: 2.3rem;
+}
+
+.la-sun,.la-moon {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.day_tour dd{
+  padding-top: 3rem ;
+  font-size: 1.8rem;
+}
+
+.night_tour{
+  width : 35%;
+  padding-bottom: 3rem;
+  border: 0.4rem solid #28527a;
+  background-color: #fff;
+}
+
+.night_tour dt{
+  background-color: #28527a;
+  color: #fff;
+  padding: 1.5rem 0 1.5rem 0;
+  font-size: 2.3rem;
+}
+
+.night_tour dd{
+  padding-top: 3rem ;
+  font-size: 1.8rem;
+}
+
+.month,.child,.adult {
+  display: inline-block;
+  width: 11rem;
+  padding: 0.2rem 0;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+.month {
+  background-color: #28527a;
+}
+
+.child {
+  background-color: #8ac4d0;
+}
+
+.adult {
+  background-color: #707070;
+}
+
+.slash {
+  font-size: 2rem;
+}
+
+.tax {
+  font-size: 1rem;
+}
+
+#free_pass {
+  background-image: linear-gradient(-45deg, #fff 25%, #8ac4d0 25%, #8ac4d0 50%, #fff 50%, #fff 75%, #8ac4d0 75%, #00bfff);
+  background-size: 4px 4px;
+  padding: 10rem 0; 
+}
+
+.free_pass {
+  background-color: #fff;
+  width: 50%;
+  position: relative;
+  padding: 3%;
+  box-shadow: 0.5rem 0.5rem #8ac4d0;
+}
+
+.circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-image: linear-gradient(-45deg, #fff 25%, #8ac4d0 25%, #8ac4d0 50%, #fff 50%, #fff 75%, #8ac4d0 75%, #00bfff);
+  background-size: 4px 4px;
+  position: absolute;
+  top: calc(50% - 3rem);
+  left: -3rem;
+}
+
+.free_pass h2 {
+  font-size: 4rem;
+  display: inline-block;
+  line-height: 1.1;
+  margin: 0.5rem 0 2rem 0;
+  color: #8ac4d0;
+  background-image: linear-gradient(transparent 70%, #fbeeac 70%);
+}
+
+.free_pass span {
+  font-size: 3rem;
+}
+
+/*----------------#news----------------------------------------------*/
+
 
 
 
