@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}                                        /*全margin,paddingをリセット*/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box;-o-box-sizing: border-box;  -ms-box-sizing: border-box;box-sizing: border-box;
+}                                       /*box-sizingをborder-boxに*/
+
+html {
+  font-size: 62.5%;                     /*フォントサイズを1rem=10pxに*/
+}                 
+
+body {
+  background-color: #fff;          /*背景を#f0f0f0*/
+  color:   #28527a;                       /*文字色を #28527a*/
+  font-family: YuGothic,'Yu Gothic',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Calibri','Arial';  
+  font-size: 1.44rem;                    /*フォントサイズをデフォルト14pに*/
+  line-height: 1.3;                     /*行の高さ指定,数値のみ*/
+  text-decoration: none;                /*下線等無し*/
+  letter-spacing: 0.1rem;             
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 70px;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+a,p,dt,dd {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}                                       /*画像の隙間や変形をなくす*/
+
+li {
+  font-size: 1.6rem;
+  font-weight: bold;
+  list-style: none;                     /*リストに・等無し*/
+}
+
+a:link,a:visited,a:hover,a:active {  
+  text-decoration: none;  
+  color:  #28527a;  
+}  
+
+.logo {
+  width: 160px;
+  line-height: 1;
+}
+
+.logo a {
+  display: block;
+}
+
+.section-title {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 10rem 0 7rem 0;
+  color: #28527a;
+  background-image: linear-gradient(transparent 70%, #fbeeac 70%);
+}
+
+.wrapper {
+  width:100%;
+  max-width: 1200px;
+  padding: 0 2%;
+  margin: 0 auto;
+  text-align: center;
+}                                      /*横幅の設定*/
+
+/*----------------#header----------------------------------------------*/
+
+.slide {
+  position: relative;
+  width: 100%;
+  padding-bottom: 34.375%;
+  overflow: hidden;
+  background-color: #8ac4d0;
+}
+  
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  
+  10% {
+    opacity: 1;
+  }
+  
+  28% {
+    opacity: 1
+  }
+  
+  38% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+  
+.slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: slideshow 16s linear infinite;
+}
+  
+.slide img:nth-child(2) {
+  animation-delay: 0s;
+}
+  
+.slide img:last-child {
+  animation-delay: 8s;
+}
+
+/*----------------#header----------------------------------------------*/
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 31.3%; 
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 40px 5%;
+}
+
+.inner {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.inner ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+.instagram img {
+  height: auto;
+  width: 3.5rem;
+}
+
+.la-twitter {
+  font-size: 3.5rem;
+  color: #55acee;
+  margin-right: 2rem;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 7rem 0 0 0;
+}
+
+.nav li {
+  width: 12%;
+  text-align: center;
+}
+
+.nav i {
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  color: #28527a;
+}
+
+.nav span:hover {
+  background-image: linear-gradient(transparent 50%, #fbeeac 50%);
+}
+
+/*----------------#pick_up----------------------------------------------*/
+
+.pickup_main {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.pickup_main img {
+  margin-bottom: 5rem;
+}
+
+.star1 {
+  width: 13%;
+  position: absolute;
+  top: 1.5rem;
+  left: 4rem;
+}
+
+.pickup_dolphin {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.pickup_dolphin_pic {
+  width: 45%;
+  position: relative;
+}
+
+.star2 {
+  width: 26%;
+  position: absolute;
+  top: 1.5rem;
+  left: 4rem;
+}
+
+.pickup_dolphin_txt {
+  width: 50%;
+}
+
+.title{
+  margin-bottom: 3rem;
+}
+
+.pop {
+  width: 60%;
+  padding: 1rem 1rem;
+  background-color: #f4d160;
+  border-radius: 2rem;
+  margin: 2rem 20% 0 20%;
+}
+
+.pop_title {
+  width: 70%;
+  padding: 0.5rem;
+  background-color: #28527a;
+  border-radius: 10rem;
+  color: #fff;
+  margin: -0.3rem auto 0.5rem auto;
+} 
+
+.pop span{
+  font-size: 2.3rem;
+  letter-spacing: 0.3rem;
+}
+
+.pickup_jellyfish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.pickup_jellyfish_pic {
+  width: 45%;
+  position: relative;
+}
+
+.star3 {
+  width: 26%;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.pickup_jellyfish_txt {
+  width: 50%;
+}
+
+.others ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.others li {
+  width: 15%;
+}
+
+.others img {
+  margin-bottom: 1.5rem;
+}
+
+/*----------------#facility_map----------------------------------------------*/
+
+#facility_map p{
+  margin-bottom: 6rem;
+}
+
+.facility_map {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facility_map img {
+  width: 45%;
+  height: 45%;
+}
+
+.facility_map img+img {
+  margin-top: 16rem;
+}
+
+/*----------------#Opening_hours----------------------------------------------*/
+
+
+
+
+/*----------------#contact----------------------------------------------*/
+
+
+
+/*----------------#footer----------------------------------------------*/
+
+
+/*----------------#media----------------------------------------------*/
+
+@media screen and (max-width:600px) {
+}
