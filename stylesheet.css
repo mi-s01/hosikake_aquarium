@@ -78,6 +78,21 @@ a:link,a:visited,a:hover,a:active {
   text-align: center;
 }                                      /*横幅の設定*/
 
+.pickup_main,.pickup_dolphin,.pickup_jellyfish,.others,.facility_map,#opening_hours,#fee{
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+@keyframes fadein{
+  from{
+  opacity: 0;
+  transform: translatesy(20px);
+  }
+  to{
+  opacity: 1;
+  transform: translatey(0);
+  }
+}                                     /*ふわっとさせる*/
+
 /*----------------#header----------------------------------------------*/
 
 .slide {
@@ -177,18 +192,22 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .nav li {
-  width: 12%;
+  width: 13%;
   text-align: center;
 }
 
 .nav i {
   margin-bottom: 1rem;
-  font-size: 4.5rem;
+  font-size: 5rem;
   color: #28527a;
 }
 
 .nav span:hover {
   background-image: linear-gradient(transparent 50%, #fbeeac 50%);
+}
+
+.nav i:hover {
+  color: #f4d160;
 }
 
 /*----------------#pick_up----------------------------------------------*/
