@@ -15,7 +15,7 @@
   <header>
     <div class="slide">
       <img src="img/top_2.jpg" alt="">
-      <img src="img/top_0.jpg" alt="">
+      <img src="img/top_.jpg" alt="">
       <img src="img/top_3.jpg" alt="">
       <img src="img/top_4.jpg" alt="">
       <img src="img/top_5.jpg" alt="">
@@ -51,7 +51,7 @@
 
     <section id="pick_up" class="wrapper">
       <h2 class="section-title">見どころ</h2>
-      <div class="pickup_main effect-fade" >
+      <div class="pickup_main fade-block" >
         <img src="img/main.png" alt="見どころ1">
         <img class="star1" src="img/star_1.png" alt="">
         <h3 class="title">星駆水族館は、全国でも珍しい昼と夜の２部構成の水族館です！</h3>
@@ -61,7 +61,7 @@
       </div>
       <div>
 
-      <div class="pickup_dolphin effect-fade">
+      <div class="pickup_dolphin fade-block">
         <div class="pickup_dolphin_pic">
           <img src="img/dolphin.png" alt="見どころ2">
           <img  class="star2" src="img/star_2.png" alt="">
@@ -82,7 +82,7 @@
         </div>
       </div>
 
-      <div class="pickup_jellyfish effect-fade">
+      <div class="pickup_jellyfish fade-block">
         <div class="pickup_jellyfish_pic">
           <img src="img/jellyfish.png" alt="見どころ3">
           <img  class="star3" src="img/star_3.png" alt="">
@@ -98,8 +98,8 @@
           </p>
         </div>
       </div>
-      <div class="others">
-        <h3 class="title">そのほか、星駆の仲間たち！</h3>
+      <div class="others fade-block">
+        <h3 class="others_title">その他、星駆水族館の仲間たち！</h3>
         <ul>
           <li><img src="img/white-dolphin.png"><br>白イルカ</li>
           <li><img src="img/sardine.png"><br>イワシ</li>
@@ -117,8 +117,8 @@
         <br>順路はありませんので、ご自由にお楽しみください。
       </p>
       <div class="facility_map">
-        <img src="img/map_1F.png" alt="1F">
-        <img src="img/map_b1F.png" alt="B1F">
+        <img class="fade-block" src="img/map_1F.png" alt="1F">
+        <img  class="fade-block" src="img/map_b1F.png" alt="B1F">
       </div>
     </section>
 
@@ -126,7 +126,7 @@
       <div id="opening_hours" class="wrapper">
         <h2 class="section-title">営業時間</h2>
         <p>(火曜日休館)</p>
-        <div class="list">
+        <div class="list fade-block">
           <dl class="day_tour">
             <dt><i class="las la-sun"></i>デイツアー</dt>
             <dd>10時 〜 17時<dd>
@@ -142,7 +142,7 @@
       <div id="fee" class="wrapper">
         <h2 class="section-title">入館料</h2>
         <p><span class="slash">＼</span> 夏休み期間限定！7月1日〜8月31日まで、小学生はナイトツアー半額！ <span class="slash">／</span></p>
-        <div class="list">
+        <div class="list fade-block">
           <dl class="day_tour">
             <dt><i class="las la-sun"></i>デイツアー</dt>
             <dd><span class="child">小学生以下</span>1200円<small class="tax">（税込）</small></dd>
@@ -168,7 +168,7 @@
 
     <section id="news" class="wrapper">
       <h2 class="section-title">ニュース</h2>
-      <ul class="article">
+      <ul class="article  fade-block">
         <li>
           <time>2021.6.12</time>
           <p>【夏休み期間限定！】
@@ -193,11 +193,11 @@
 
     <section id="access" class="wrapper">
       <h2 class="section-title">アクセス</h2>
-      <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8173.68060123162!2d136.1834341109156!3d36.24917309082605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8e542fc3ae44f%3A0xc1f83f22e181aac1!2z5rC35bed56We56S-!5e0!3m2!1sja!2sjp!4v1623988298533!5m2!1sja!2sjp" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="ggmap fade-block"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8173.68060123162!2d136.1834341109156!3d36.24917309082605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8e542fc3ae44f%3A0xc1f83f22e181aac1!2z5rC35bed56We56S-!5e0!3m2!1sja!2sjp!4v1623988298533!5m2!1sja!2sjp" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <h3 class="address">〒910-XXXX 福井県あわら市星駆 XX-XX-X</h3>
       <h3>TEL / <a href="tel:"></a>000-000-0000</h3>
-      <ul class="description">
+      <ul class="description fade-block">
         <li>
           <h4 class="bus">シャトルバス</h4>
           <p>30分間隔で、あわら湯のまち駅からシャトルバスが運行しています！<br>※9時30分始発/16時終便</p>
@@ -236,6 +236,15 @@
   </footer>
 
   <script  type="text/javascript" src="hoshikake.js"></script>
+  <noscript>
+    <style>
+      .fade-block {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+      }
+    </style>
+  </noscript>
 </body>
 
 </html>

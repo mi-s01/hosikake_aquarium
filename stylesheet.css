@@ -78,20 +78,21 @@ a:link,a:visited,a:hover,a:active {
   text-align: center;
 }                                      /*横幅の設定*/
 
-.effect-fade{
-  animation-name: fadein;
-  animation-duration: 3s;
+/* ----------下からふわっと---------- */
+/* 画面外 */
+.fade-block {
+  opacity: 0; 
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
 }
-@keyframes fadein{
-  from{
-  opacity: 0;
-  transform: translatey(20px);
-  }
-  to{
+
+/* 画面に入った時の動き */
+.fade-block.is-show {
   opacity: 1;
-  transform: translatey(0);
-  }
-}                                     /*ふわっとさせる*/
+  visibility: visible;
+  transform: translateY(0px);
+}   
 
 /*----------------#header----------------------------------------------*/
 
@@ -242,7 +243,7 @@ a:link,a:visited,a:hover,a:active {
   padding: 1rem 1rem;
   background-color: #f4d160;
   border-radius: 2rem;
-  margin: 2rem 20% 0 20%;
+  margin: 2.5rem 20% 0 20%;
 }
 
 .pop_title {
@@ -285,7 +286,11 @@ a:link,a:visited,a:hover,a:active {
 .others {
   border: 0.3rem dotted #8ac4d0;
   border-radius: 6rem;
-  padding: 6em;
+  padding: 5em;
+}
+
+.others_title{
+  margin-bottom: 5rem;
 }
 
 .others ul{
@@ -416,6 +421,8 @@ a:link,a:visited,a:hover,a:active {
 .free_pass {
   background-color: #fff;
   width: 50%;
+  max-width: 600px;
+  max-height: 300px;
   position: relative;
   padding: 3%;
   box-shadow: 0.5rem 0.5rem #8ac4d0;
@@ -534,7 +541,7 @@ a:link,a:visited,a:hover,a:active {
 
 footer {
   width: 100%;
-  height:250px;
+  height:240px;
   background-color: #28527a;
   color:#fff;
 }
@@ -542,7 +549,7 @@ footer {
 .footer_inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:flex-start;
   margin: 0 auto;
   padding: 3rem 5vw;
 }
@@ -563,8 +570,6 @@ footer {
   font-weight: 300;
   text-align: center;
 }
-
-
 
 
 /*----------------#media----------------------------------------------*/
