@@ -107,7 +107,7 @@ a:link,a:visited,a:hover,a:active {
 @keyframes slideshow {
   0% {opacity: 0;}
   5% {opacity: 1;}
-  18% {opacity: 1;}
+  16% {opacity: 1;}
   35% {opacity: 0;}
   100% {opacity: 0;}
 }
