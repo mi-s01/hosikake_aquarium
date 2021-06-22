@@ -105,9 +105,9 @@ a:link,a:visited,a:hover,a:active {
   
 @keyframes slideshow {
   0% {opacity: 0;}
-  25% {opacity: 1;}
-  50% {opacity: 1;}
-  75% {opacity: 0;}
+  5% {opacity: 1;}
+  18% {opacity: 1;}
+  35% {opacity: 0;}
   100% {opacity: 0;}
 }
   
@@ -119,15 +119,15 @@ a:link,a:visited,a:hover,a:active {
   width: 100%;
   height: auto;
   opacity: 0;
-  animation: slideshow 42s ease infinite;
+  animation: slideshow 32s infinite;
 }
   
-.slide img:nth-of-type(1) { animation-delay: 0s;}
-.slide img:nth-of-type(2) { animation-delay: 7s; }
-.slide img:nth-of-type(3) { animation-delay: 14s; }
-.slide img:nth-of-type(4) { animation-delay: 21s; }
-.slide img:nth-of-type(5) { animation-delay: 28s; }
-.slide img:nth-of-type(6) { animation-delay: 35s; }
+.slide img:nth-of-type(1) { animation-delay: -2s;}
+.slide img:nth-of-type(2) { animation-delay: 5s; }
+.slide img:nth-of-type(3) { animation-delay: 10s; }
+.slide img:nth-of-type(4) { animation-delay: 15s; }
+.slide img:nth-of-type(5) { animation-delay: 20s; }
+.slide img:nth-of-type(6) { animation-delay: 25s; }
 
 /*----------------#header----------------------------------------------*/
 
