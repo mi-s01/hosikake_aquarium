@@ -206,7 +206,7 @@ a:link,a:visited,a:hover,a:active {
   background-image: linear-gradient(transparent 50%, #fbeeac 50%);
 }
 
-.nav i:hover {
+.nav li:hover {
   color: #f4d160;
 }
 
