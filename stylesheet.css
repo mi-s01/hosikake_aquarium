@@ -206,10 +206,6 @@ a:link,a:visited,a:hover,a:active {
   background-image: linear-gradient(transparent 50%, #fbeeac 50%);
 }
 
-.nav li:hover {
-  color: #f4d160;
-}
-
 /*----------------#pick_up----------------------------------------------*/
 
 .pickup_main {
@@ -491,8 +487,67 @@ a:link,a:visited,a:hover,a:active {
   object-fit: cover;
 }
 
+.description ul {
+  display: flex;
+  flex-direction: column;
+}
 
 /*----------------#footer----------------------------------------------*/
+
+.ggmap iframe{
+  width:100%;
+  margin: 0 auto 5rem auto;
+}
+
+.address {
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-top: 5rem;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  border-top: 2px solid #28527a;
+  border-bottom: 2px solid #28527a;
+}
+
+.description h4{
+  margin-right: 5rem;
+  color: #fff;
+}
+
+.bus {
+  display: inline-block;
+  width: 20rem;
+  height: 3.5rem;
+  padding: 0.5rem 0;
+  background-color: #8ac4d0;
+  border-radius: 3.5rem;
+  text-align: center;
+}
+
+.car {
+  display: inline-block;
+  width: 20rem;
+  height: 3.5rem;
+  padding: 0.5rem 0;
+  background-color: #f4d160;
+  border-radius: 3.5rem;
+  text-align: center;
+}
+
+.description li {
+  display: flex;
+} 
+
+.description li:first-child {
+  margin-bottom: 3rem;
+} 
+
+/*----------------#header----------------------------------------------*/
+
+
 
 
 /*----------------#media----------------------------------------------*/
