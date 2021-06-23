@@ -421,7 +421,7 @@ a:link,a:visited,a:hover,a:active {
 }
 
 #free_pass {
-  background-image: linear-gradient(-45deg, #fff 25%, #8ac4d0 25%, #8ac4d0 50%, #fff 50%, #fff 75%, #8ac4d0 75%, #00bfff);
+  background-image: linear-gradient(-45deg, #fff 25%, #8ac4d0 25%, #8ac4d0 50%, #fff 50%, #fff 75%, #8ac4d0 75%, #8ac4d0);
   background-size: 4px 4px;
   padding: 10rem 0; 
 }
@@ -433,7 +433,7 @@ a:link,a:visited,a:hover,a:active {
   max-height: 300px;
   position: relative;
   padding: 3%;
-  box-shadow: 0.5rem 0.5rem #8ac4d0;
+  box-shadow: 7px 7px #8ac4d0;
 }
 
 .circle {
@@ -539,6 +539,7 @@ a:link,a:visited,a:hover,a:active {
 
 .description li {
   display: flex;
+  text-align: left;
 } 
 
 .description li:first-child {
