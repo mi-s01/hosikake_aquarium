@@ -172,8 +172,9 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .nav ul {
+  min-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   margin: 7rem 0 0 0;
 }
 
@@ -200,7 +201,7 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .pickup_main img {
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 .star1 {
@@ -221,9 +222,9 @@ a:link,a:visited,a:hover,a:active {
 .pickup_dolphin {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 .pickup_dolphin_pic {
@@ -247,15 +248,17 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .pop {
-  width: 60%;
+  width: 65%;
+  min-width: 300px;
   padding: 1rem 1rem;
   background-color: #f4d160;
   border-radius: 2rem;
-  margin: 2.5rem 20% 0 20%;
+  margin: 3rem auto 0 auto;
 }
 
 .pop_title {
   width: 70%;
+  min-width: 20rem;
   padding: 0.5rem;
   background-color: #28527a;
   border-radius: 10rem;
@@ -271,7 +274,7 @@ a:link,a:visited,a:hover,a:active {
 .pickup_jellyfish {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 8rem;
 }
 
@@ -294,20 +297,24 @@ a:link,a:visited,a:hover,a:active {
 .others {
   border: 0.3rem dotted #8ac4d0;
   border-radius: 6rem;
-  padding: 5em;
+  padding: 8% 5%;
 }
 
 .others_title{
-  margin-bottom: 5rem;
+  margin-bottom: 6%;
 }
 
 .others ul{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-content: space-between;
 }
 
 .others li {
   width: 15%;
+  min-width: 7.5rem;
+  line-height: 1;
 }
 
 .others img {
@@ -322,17 +329,19 @@ a:link,a:visited,a:hover,a:active {
 
 .facility_map {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 10rem;
 }
 
 .facility_map img {
   width: 45%;
+  min-width: 300px;
   height: 45%;
 }
 
 .facility_map img+img {
-  margin-top: 16rem;
+  margin-top: 10%;
 }
 
 /*----------------#Opening_hours----------------------------------------------*/
@@ -344,12 +353,14 @@ a:link,a:visited,a:hover,a:active {
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 4rem;
 }
 
 .day_tour {
   width : 35%;
+  min-width: 340px;
   padding-bottom: 3rem;
   border: 0.4rem solid #f4d160;
   background-color: #fff;
@@ -373,6 +384,7 @@ a:link,a:visited,a:hover,a:active {
 
 .night_tour{
   width : 35%;
+  min-width: 340px;
   padding-bottom: 3rem;
   border: 0.4rem solid #28527a;
   background-color: #fff;
@@ -431,14 +443,15 @@ a:link,a:visited,a:hover,a:active {
   width: 50%;
   max-width: 600px;
   max-height: 300px;
+  min-width: 330px;
   position: relative;
   padding: 3%;
-  box-shadow: 7px 7px #8ac4d0;
+  box-shadow: 8px 8px #8ac4d0;
 }
 
 .circle {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background-image: linear-gradient(-45deg, #fff 25%, #8ac4d0 25%, #8ac4d0 50%, #fff 50%, #fff 75%, #8ac4d0 75%, #00bfff);
   background-size: 4px 4px;
@@ -519,7 +532,7 @@ a:link,a:visited,a:hover,a:active {
 
 .bus {
   display: inline-block;
-  width: 20rem;
+  min-width: 20rem;
   height: 3.5rem;
   padding: 0.5rem 0;
   background-color: #8ac4d0;
@@ -529,7 +542,7 @@ a:link,a:visited,a:hover,a:active {
 
 .car {
   display: inline-block;
-  width: 20rem;
+  min-width: 20rem;
   height: 3.5rem;
   padding: 0.5rem 0;
   background-color: #f4d160;
