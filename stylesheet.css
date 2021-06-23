@@ -210,6 +210,14 @@ a:link,a:visited,a:hover,a:active {
   left: 4rem;
 }
 
+.title span {
+  font-size: 3rem;
+  -webkit-text-emphasis: dot;
+  -webkit-text-emphasis-color: #55acee;
+  text-emphasis: filled;
+  text-emphasis-color: #55acee;
+}
+
 .pickup_dolphin {
   display: flex;
   flex-direction: row-reverse;
