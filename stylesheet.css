@@ -73,7 +73,7 @@ a:link,a:visited,a:hover,a:active {
 .wrapper {
   width:100%;
   max-width: 1200px;
-  padding: 0 2%;
+  padding: 0 4%;
   margin: 0 auto;
   text-align: center;
 }                                      /*横幅の設定*/
@@ -235,12 +235,8 @@ a:link,a:visited,a:hover,a:active {
 .star2 {
   width: 26%;
   position: absolute;
-  top: 1.5rem;
-  left: 4rem;
-}
-
-.pickup_dolphin_txt {
-  width: 50%;
+  top: 1rem;
+  left: 3rem;
 }
 
 .title{
@@ -249,11 +245,11 @@ a:link,a:visited,a:hover,a:active {
 
 .pop {
   width: 65%;
-  min-width: 300px;
-  padding: 1rem 1rem;
+  min-width: 275px;
+  padding: 1rem 0;
   background-color: #f4d160;
   border-radius: 2rem;
-  margin: 3rem auto 0 auto;
+  margin: 2rem auto 0 auto;
 }
 
 .pop_title {
@@ -290,10 +286,6 @@ a:link,a:visited,a:hover,a:active {
   left: 2rem;
 }
 
-.pickup_jellyfish_txt {
-  width: 50%;
-}
-
 .others {
   border: 0.3rem dotted #8ac4d0;
   border-radius: 6rem;
@@ -321,6 +313,10 @@ a:link,a:visited,a:hover,a:active {
   margin-bottom: 1.5rem;
 }
 
+.ib {
+  display: none;
+}
+
 /*----------------#facility_map----------------------------------------------*/
 
 #facility_map p{
@@ -338,6 +334,7 @@ a:link,a:visited,a:hover,a:active {
   width: 45%;
   min-width: 300px;
   height: 45%;
+  margin: 0 0.5rem;
 }
 
 .facility_map img+img {
@@ -360,7 +357,7 @@ a:link,a:visited,a:hover,a:active {
 
 .day_tour {
   width : 35%;
-  min-width: 340px;
+  min-width: 360px;
   padding-bottom: 3rem;
   border: 0.4rem solid #f4d160;
   background-color: #fff;
@@ -384,7 +381,7 @@ a:link,a:visited,a:hover,a:active {
 
 .night_tour{
   width : 35%;
-  min-width: 340px;
+  min-width: 360px;
   padding-bottom: 3rem;
   border: 0.4rem solid #28527a;
   background-color: #fff;
@@ -428,6 +425,10 @@ a:link,a:visited,a:hover,a:active {
   font-size: 2rem;
 }
 
+.slash2 {
+  display: none;
+}
+
 .tax {
   font-size: 1rem;
 }
@@ -443,7 +444,7 @@ a:link,a:visited,a:hover,a:active {
   width: 50%;
   max-width: 600px;
   max-height: 300px;
-  min-width: 330px;
+  min-width: 360px;
   position: relative;
   padding: 3%;
   box-shadow: 8px 8px #8ac4d0;
@@ -532,7 +533,7 @@ a:link,a:visited,a:hover,a:active {
 
 .bus {
   display: inline-block;
-  min-width: 20rem;
+  width: 20rem;
   height: 3.5rem;
   padding: 0.5rem 0;
   background-color: #8ac4d0;
@@ -542,7 +543,7 @@ a:link,a:visited,a:hover,a:active {
 
 .car {
   display: inline-block;
-  min-width: 20rem;
+  width: 20rem;
   height: 3.5rem;
   padding: 0.5rem 0;
   background-color: #f4d160;
@@ -593,8 +594,90 @@ footer {
   text-align: center;
 }
 
-
 /*----------------#media----------------------------------------------*/
 
-@media screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
+  /*tablet用のcssを記述*/
+
+  .inner ul {
+    display: none;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .ib {
+    display: inline-block;
+  }
+
+.star1 {
+  width: ;
 }
+
+  .pickup_dolphin,.pickup_jellyfish {
+    flex-wrap: wrap;
+  }
+
+  .pickup_dolphin_pic,.pickup_jellyfish_pic {
+    width: 70vw;
+    margin-bottom: 4rem;
+  }
+
+.main_txt,.pickup_dolphin_txt,.pickup_jellyfish_txt,.facility_map_txt {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.main_txt br,.pickup_dolphin_txt br,.pickup_jellyfish_txt br,.facility_map_txt br {
+  display: none;
+}
+
+.slash {
+  display: none;
+}
+
+.slash2 {
+  display: inline;
+  font-size: 2rem;
+}
+
+.free_pass h2 {
+  font-size: 3.5rem;
+}
+
+.article li {
+  flex-wrap: wrap;
+}
+
+.article p {
+  margin-left: 0;
+}
+
+.article img {
+width: 100vw;
+margin-top: 1.5rem;
+}
+
+.description li {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bus,.car {
+  margin-bottom: 1.5rem;
+}
+
+.description p {
+  text-align: center;
+}
+
+.description h4{
+  margin-right: 0;
+  color: #fff;
+}
+
+@media only screen and (min-width:520px) and (max-width:800px) {
+@media screen and (max-width:375px) {
+  /*スマホ用のcssを記述*/
+  }
