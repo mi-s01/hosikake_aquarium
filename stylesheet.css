@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.3rem;
+  font-size:2.3rem;
 }
 
 a,p,dt,dd {
@@ -77,6 +77,14 @@ a:link,a:visited,a:hover,a:active {
   margin: 0 auto;
   text-align: center;
 }                                      /*横幅の設定*/
+
+.ib {
+  display: none;
+}
+
+.ib2 {
+  display: none;
+}
 
 /* ----------下からふわっと---------- */
 /* 画面外 */
@@ -207,8 +215,8 @@ a:link,a:visited,a:hover,a:active {
 .star1 {
   width: 13%;
   position: absolute;
-  top: 1.5rem;
-  left: 4rem;
+  top: 0rem;
+  left: 1rem;
 }
 
 .title span {
@@ -235,8 +243,8 @@ a:link,a:visited,a:hover,a:active {
 .star2 {
   width: 26%;
   position: absolute;
-  top: 1rem;
-  left: 3rem;
+  top: 0rem;
+  left: 1rem;
 }
 
 .title{
@@ -245,7 +253,7 @@ a:link,a:visited,a:hover,a:active {
 
 .pop {
   width: 65%;
-  min-width: 275px;
+  min-width: 280px;
   padding: 1rem 0;
   background-color: #f4d160;
   border-radius: 2rem;
@@ -264,7 +272,6 @@ a:link,a:visited,a:hover,a:active {
 
 .pop span{
   font-size: 2.3rem;
-  letter-spacing: 0.3rem;
 }
 
 .pickup_jellyfish {
@@ -283,7 +290,7 @@ a:link,a:visited,a:hover,a:active {
   width: 26%;
   position: absolute;
   top: 0;
-  left: 2rem;
+  left: 1rem;
 }
 
 .others {
@@ -293,7 +300,7 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .others_title{
-  margin-bottom: 6%;
+  margin-bottom: 3rem;
 }
 
 .others ul{
@@ -305,16 +312,13 @@ a:link,a:visited,a:hover,a:active {
 
 .others li {
   width: 15%;
-  min-width: 7.5rem;
+  min-width: 8rem;
   line-height: 1;
+  margin-bottom: 1rem;
 }
 
 .others img {
   margin-bottom: 1.5rem;
-}
-
-.ib {
-  display: none;
 }
 
 /*----------------#facility_map----------------------------------------------*/
@@ -436,7 +440,7 @@ a:link,a:visited,a:hover,a:active {
 #free_pass {
   background-image: linear-gradient(-45deg, #fff 25%, #8ac4d0 25%, #8ac4d0 50%, #fff 50%, #fff 75%, #8ac4d0 75%, #8ac4d0);
   background-size: 4px 4px;
-  padding: 10rem 0; 
+  padding: 8rem 0; 
 }
 
 .free_pass {
@@ -508,9 +512,13 @@ a:link,a:visited,a:hover,a:active {
 
 /*----------------#footer----------------------------------------------*/
 
-.ggmap iframe{
+.ggmap1 iframe{
   width:100%;
   margin: 0 auto 5rem auto;
+}
+
+.ggmap2 {
+  display: none;
 }
 
 .address {
@@ -564,9 +572,9 @@ a:link,a:visited,a:hover,a:active {
 
 footer {
   width: 100%;
-  height:240px;
+  height: 24rem;
   background-color: #28527a;
-  color:#fff;
+  color: #fff;
 }
 
 .footer_inner {
@@ -611,12 +619,20 @@ footer {
     display: inline-block;
   }
 
-.star1 {
-  width: ;
-}
+  .ib2 {
+    display: none;
+  }
+
+  .star1,.star2,.star3 {
+    width: 20vw;
+  }
 
   .pickup_dolphin,.pickup_jellyfish {
     flex-wrap: wrap;
+  }
+
+  .pickup_main img {
+    margin-bottom: 4rem; 
   }
 
   .pickup_dolphin_pic,.pickup_jellyfish_pic {
@@ -624,60 +640,143 @@ footer {
     margin-bottom: 4rem;
   }
 
-.main_txt,.pickup_dolphin_txt,.pickup_jellyfish_txt,.facility_map_txt {
-  text-align: justify;
-  text-justify: inter-ideograph;
-}
+  .main_txt,.pickup_dolphin_txt,.pickup_jellyfish_txt,.facility_map_txt {
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
 
-.main_txt br,.pickup_dolphin_txt br,.pickup_jellyfish_txt br,.facility_map_txt br {
-  display: none;
-}
+  .main_txt br,.pickup_dolphin_txt br,.pickup_jellyfish_txt br,.facility_map_txt br {
+    display: none;
+  }
 
-.slash {
-  display: none;
-}
+  .slash {
+    display: none;
+  }
 
-.slash2 {
-  display: inline;
-  font-size: 2rem;
-}
+  .slash2 {
+    display: inline;
+    font-size: 2rem;
+  }
 
-.free_pass h2 {
-  font-size: 3.5rem;
-}
+  .day_tour dd {
+    margin-bottom: -1rem;
+  }
 
-.article li {
-  flex-wrap: wrap;
-}
+  .free_pass h2 {
+    font-size: 3rem;
+  }
 
-.article p {
-  margin-left: 0;
-}
+  .article li {
+    flex-wrap: wrap;
+  }
 
-.article img {
-width: 100vw;
-margin-top: 1.5rem;
-}
+  .article p {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
 
-.description li {
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .ggmap1 iframe {
+    display: none;
+  }
+  
+  .ggmap2 {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto 5rem auto;
+  }
 
-.bus,.car {
-  margin-bottom: 1.5rem;
-}
+  .article img {
+    width: 100vw;
+    margin-top: 1.5rem;
+  }
 
-.description p {
-  text-align: center;
-}
+  .description li {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.description h4{
+  .description {
+    margin-bottom: 8rem;
+  }
+
+  .bus,.car {
+    margin-bottom: 1.5rem;
+  }
+
+  .description p {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .description h4{
   margin-right: 0;
   color: #fff;
+  }
+
+  footer {
+    height: 10rem;
+  }
+
+  .footer_inner {
+    padding-top: 1.4rem;
+    height: 5.5rem;
+  }
+  .footer_icon {
+    margin: 0 auto;
+  }
+
+  .footer_icon ul,.footer_nav {
+    display: none;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+  }
 }
 
-@media only screen and (min-width:520px) and (max-width:800px) {
-@media screen and (max-width:375px) {
+@media screen and (max-width:520px) {
   /*スマホ用のcssを記述*/
+  .pickup_main {
+    margin-bottom: 8rem;
   }
+
+  a,p,dt,dd {
+    line-height: 1.6;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    margin: 8rem 0 4rem 0;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+  
+  h3 {
+    font-size:2rem;
+  }
+  
+  .title span{
+    font-size: 2.5rem;
+  }
+
+  .facility_map img,.day_tour,.night_tour,.free_pass {
+    min-width: 280px;
+    width:90vw;
+  }
+
+  .ib2 {
+    display: inline-block;
+  }
+
+  .month {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .free_pass h2 {
+    font-size: 2.5rem;
+  }
+}
