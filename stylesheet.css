@@ -43,7 +43,7 @@ img {
 }                                       /*画像の隙間や変形をなくす*/
 
 li {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   list-style: none;                     /*リストに・等無し*/
 }
@@ -254,10 +254,10 @@ a:link,a:visited,a:hover,a:active {
 .pop {
   width: 65%;
   min-width: 280px;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   background-color: #f4d160;
   border-radius: 2rem;
-  margin: 2rem auto 0 auto;
+  margin: 2.5rem auto 0 auto;
 }
 
 .pop_title {
@@ -267,7 +267,7 @@ a:link,a:visited,a:hover,a:active {
   background-color: #28527a;
   border-radius: 10rem;
   color: #fff;
-  margin: -0.3rem auto 0.5rem auto;
+  margin: 0.3rem auto 1rem auto;
 } 
 
 .pop span{
@@ -539,24 +539,22 @@ a:link,a:visited,a:hover,a:active {
   color: #fff;
 }
 
-.bus {
+.bus,.car {
   display: inline-block;
   width: 20rem;
   height: 3.5rem;
-  padding: 0.5rem 0;
-  background-color: #8ac4d0;
+  padding: 0.8rem 0;
   border-radius: 3.5rem;
   text-align: center;
+  
+}
+
+.bus {
+  background-color: #8ac4d0;
 }
 
 .car {
-  display: inline-block;
-  width: 20rem;
-  height: 3.5rem;
-  padding: 0.5rem 0;
   background-color: #f4d160;
-  border-radius: 3.5rem;
-  text-align: center;
 }
 
 .description li {
@@ -624,7 +622,7 @@ footer {
   }
 
   .star1,.star2,.star3 {
-    width: 20vw;
+    width: 17vw;
   }
 
   .pickup_dolphin,.pickup_jellyfish {
@@ -743,7 +741,8 @@ footer {
   }
 
   a,p,dt,dd {
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.4rem;
   }
   .section-title {
     font-size: 2.5rem;
@@ -760,6 +759,10 @@ footer {
   
   .title span{
     font-size: 2.5rem;
+  }
+
+  .star1,.star2,.star3 {
+    width: 20vw;
   }
 
   .facility_map img,.day_tour,.night_tour,.free_pass {
