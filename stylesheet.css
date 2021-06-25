@@ -16,7 +16,7 @@ html {
 body {
   background-color: #fff;          /*背景を#f0f0f0*/
   color:   #28527a;                       /*文字色を #28527a*/
-  font-family: YuGothic,'Yu Gothic',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Calibri','Arial';  
+  font-family: 'YuGothic','Yu Gothic','YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Calibri','Arial';  
   font-size: 1.44rem;                    /*フォントサイズをデフォルト14pに*/  
   text-decoration: none;                /*下線等無し*/
   letter-spacing: 0.1rem;             
@@ -65,7 +65,7 @@ a:link,a:visited,a:hover,a:active {
 .section-title {
   display: inline-block;
   line-height: 1.1;
-  margin: 12rem 0 5rem 0;
+  margin: 10rem 0 5rem 0;
   color: #28527a;
   background-image: linear-gradient(transparent 70%, #fbeeac 70%);
 }
@@ -109,7 +109,6 @@ a:link,a:visited,a:hover,a:active {
   width: 100%;
   padding-bottom: 34.375%;
   overflow: hidden;
-  background-color: #8ac4d0;
 }
   
 @keyframes slideshow {
@@ -149,13 +148,14 @@ a:link,a:visited,a:hover,a:active {
 
 .top {
   position: absolute;
+  width: 90vw;
   top: 0;
   left: 0;
-  margin: 40px 5%;
+  margin: 5%;
 }
 
 .inner {
-  width: 90vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,6 +177,24 @@ a:link,a:visited,a:hover,a:active {
   font-size: 3.5rem;
   color: #55acee;
   margin-right: 2rem;
+}
+
+.la-water {
+  font-size: 3.5rem;
+  color: #28527a;
+  margin-right: 2rem;
+  display: none;
+}
+
+.copy {
+  margin: 8% auto;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 1rem #28527a;
+}
+
+.top span {
+  font-size: 2.2rem;
 }
 
 .nav ul {
@@ -267,7 +285,7 @@ a:link,a:visited,a:hover,a:active {
   background-color: #28527a;
   border-radius: 10rem;
   color: #fff;
-  margin: 0.3rem auto 1rem auto;
+  margin: 0.3rem auto 1.2rem auto;
 } 
 
 .pop span{
@@ -278,7 +296,7 @@ a:link,a:visited,a:hover,a:active {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .pickup_jellyfish_pic {
@@ -605,13 +623,33 @@ footer {
 @media only screen and (max-width:800px) {
   /*tablet用のcssを記述*/
 
-  .inner ul {
+  .la-twitter,.instagram {
     display: none;
   }
 
   .nav ul {
     display: none;
   }
+
+  .inner {
+    width: calc(100% - 4.5rem);
+    margin-left: 0;
+  }
+
+  .inner li {
+    position: fixed;
+    z-index: 10;
+  }
+
+  .la-water {
+    display: inline-block;
+    background-color: rgb(255, 253, 253, 0.6);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .copy {
+    font-size: 2.6rem;
 
   .ib {
     display: inline-block;
