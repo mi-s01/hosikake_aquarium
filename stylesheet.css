@@ -242,6 +242,7 @@ a:link,a:visited,a:hover,a:active {
   position: absolute;
   top: -12rem;
   left: 110rem;
+  z-index: -1;
 }
 
 .title span {
@@ -277,6 +278,15 @@ a:link,a:visited,a:hover,a:active {
   position: absolute;
   top: -30rem;
   left: -60rem;
+  z-index: -1;
+}
+
+.splush {
+  width: 6vw;
+  position: absolute;
+  top: 0rem;
+  left: 33em;
+  z-index: -1;
 }
 
 .title{
@@ -681,15 +691,26 @@ footer {
   .bubble1 {
     width: 8vw;
     position: absolute;
-    top: -7rem;
+    top: -9rem;
     left: 85vw;
+    z-index: -1;
   }
 
   .bubble2 {
-    width: 8vw;
+    width: 10vw;
     position: absolute;
-    top: -30rem;
+    top: -33rem;
     left: -5rem;
+    z-index: -1;
+  }
+
+  .splush {
+    width: 10vw;
+    position: absolute;
+    top: 0rem;
+    left: 18em;
+    overflow: hidden;
+    z-index: -1;
   }
 
   .pickup_dolphin,.pickup_jellyfish {
@@ -832,6 +853,31 @@ footer {
     width: 20vw;
   }
 
+  .bubble1 {
+    width: 8vw;
+    position: absolute;
+    top: -9rem;
+    left: 85vw;
+    z-index: -1;
+  }
+
+  .bubble2 {
+    width: 10vw;
+    position: absolute;
+    top: -30rem;
+    left: -5rem;
+    z-index: -1;
+  }
+
+  .splush {
+    width: 11vw;
+    position: absolute;
+    top: 0rem;
+    left: 18em;
+    overflow: hidden;
+    z-index: -1;
+  }
+
   .facility_map img,.day_tour,.night_tour,.free_pass {
     min-width: 280px;
     width:90vw;
@@ -839,6 +885,10 @@ footer {
 
   .ib2 {
     display: inline-block;
+  }
+
+  .ib3 {
+    display: none;
   }
 
   .month {
@@ -849,4 +899,61 @@ footer {
   .free_pass h2 {
     font-size: 2.5rem;
   }
+}
+
+@media screen and (max-width:320px) {
+
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  a,p,dt,dd {
+    line-height: 1.6;
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+    margin: 8rem 0 3rem 0;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+
+  .bubble1 {
+    width: 8vw;
+    position: absolute;
+    top: -7rem;
+    left: 80vw;
+    z-index: -1;
+  }
+
+  .bubble2 {
+    width: 10vw;
+    position: absolute;
+    top: -4rem;
+    left: -4rem;
+    z-index: -1;
+  }
+
+  .splush {
+    width: 9vw;
+    position: absolute;
+    top: 3rem;
+    left: 14.5em;
+  }
+
+  .pop {
+    min-width: 26rem;
+  }
+
+  .ib3 {
+    display: inline-block;
+  }
+
 }
