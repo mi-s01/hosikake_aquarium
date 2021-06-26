@@ -14,7 +14,7 @@ html {
 }                 
 
 body {
-  background-color: #fff;          /*背景を#f0f0f0*/
+  background-color: #f5f5f5;          /*背景を#f0f0f0*/
   color:   #28527a;                       /*文字色を #28527a*/
   font-family: 'YuGothic','Yu Gothic','YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Calibri','Arial';  
   font-size: 1.44rem;                    /*フォントサイズをデフォルト14pに*/  
@@ -237,6 +237,13 @@ a:link,a:visited,a:hover,a:active {
   left: 1rem;
 }
 
+.bubble1 {
+  width: 8vw;
+  position: absolute;
+  top: -12rem;
+  left: 110rem;
+}
+
 .title span {
   font-size: 3rem;
   -webkit-text-emphasis: dot;
@@ -263,6 +270,13 @@ a:link,a:visited,a:hover,a:active {
   position: absolute;
   top: 0rem;
   left: 1rem;
+}
+
+.bubble2 {
+  width: 8vw;
+  position: absolute;
+  top: -30rem;
+  left: -60rem;
 }
 
 .title{
@@ -662,6 +676,20 @@ footer {
 
   .star1,.star2,.star3 {
     width: 17vw;
+  }
+
+  .bubble1 {
+    width: 8vw;
+    position: absolute;
+    top: -7rem;
+    left: 85vw;
+  }
+
+  .bubble2 {
+    width: 8vw;
+    position: absolute;
+    top: -30rem;
+    left: -5rem;
   }
 
   .pickup_dolphin,.pickup_jellyfish {
