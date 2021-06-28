@@ -107,7 +107,7 @@ a:link,a:visited,a:hover,a:active {
 .slide {
   position: relative;
   width: 100%;
-  padding-bottom: 34.375%;
+  height: 40vh;
   overflow: hidden;
 }
   
@@ -125,7 +125,8 @@ a:link,a:visited,a:hover,a:active {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: auto;
+  height: 40vh;
+  object-fit: cover;
   opacity: 0;
   animation: slideshow 32s infinite;
 }
@@ -137,13 +138,51 @@ a:link,a:visited,a:hover,a:active {
 .slide img:nth-of-type(5) { animation-delay: 20s; }
 .slide img:nth-of-type(6) { animation-delay: 25s; }
 
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+@media only screen and (max-width:800px) {
+  /*tablet用のcssを記述*/
+
+  .pc { display: none !important; }
+  .sp { display: block !important; }
+
+  .slide {
+    height: 77vh;
+  }
+
+  .slide img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .trimming1 {
+    object-position: 58% center;
+  }
+  .trimming2 {
+    object-position: 30% center;
+  }
+}
+
 /*----------------#header----------------------------------------------*/
 
 .mask {
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
-  margin-top: 31.3%; 
+  object-fit: cover;
+  margin-top: calc(40vh - 3%); 
+}
+
+@media only screen and (max-width:800px) {
+  /*tablet用のcssを記述*/
+  .mask {
+    position: absolute;
+    top: calc(77vh - 2%);
+    left: 0;
+    margin-top: 0;
+  }
 }
 
 .top {
@@ -645,8 +684,10 @@ footer {
 
 footer .mask2 {
   position: absolute;
+  width: 100%;
   top: -6rem;
   left: 0;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -958,7 +999,7 @@ footer .mask2 {
 @media screen and (max-width:320px) {
 
   h2 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   
   h3 {
@@ -977,6 +1018,10 @@ footer .mask2 {
 
   .title {
     margin-bottom: 2rem;
+  }
+
+  .title span {
+    font-size: 2.2rem;
   }
 
   .pop {
