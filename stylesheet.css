@@ -65,9 +65,9 @@ a:link,a:visited,a:hover,a:active {
 .section-title {
   display: inline-block;
   line-height: 1.1;
-  margin: 10rem 0 5rem 0;
+  margin: 10rem 0 6rem 0;
   color: #28527a;
-  background-image: linear-gradient(transparent 70%, #fbeeac 70%);
+  background-image: linear-gradient(transparent 70%, #fdec99 70%);
 }
 
 .wrapper {
@@ -219,6 +219,12 @@ a:link,a:visited,a:hover,a:active {
   background-image: linear-gradient(transparent 50%, #fbeeac 50%);
 }
 
+.nav li + li {
+
+  border-left: 0.2rem dotted #8ac4d0;
+  padding-left: 2.2%;  
+}
+
 /*----------------#pick_up----------------------------------------------*/
 
 .pickup_main {
@@ -235,14 +241,6 @@ a:link,a:visited,a:hover,a:active {
   position: absolute;
   top: 0rem;
   left: 1rem;
-}
-
-.bubble1 {
-  width: 8vw;
-  position: absolute;
-  top: -12rem;
-  left: 110rem;
-  z-index: -1;
 }
 
 .title span {
@@ -273,19 +271,43 @@ a:link,a:visited,a:hover,a:active {
   left: 1rem;
 }
 
-.bubble2 {
-  width: 8vw;
+.bubble1 {
+  width: 9%;
   position: absolute;
-  top: -30rem;
-  left: -60rem;
+  top: -20%;
+  left: 95%;
+  z-index: -1;
+}
+
+.bubble2 {
+  width: 20%;
+  position: absolute;
+  top: -50%;
+  left: -100%;
   z-index: -1;
 }
 
 .splush {
-  width: 6vw;
+  width: 35%;
+  position: absolute;
+  top: -10%;
+  left: 80%;
+  z-index: -1;
+}
+
+.glitter1 {
+  width: 4vw;
   position: absolute;
   top: 0rem;
-  left: 33em;
+  left: 45rem;
+  z-index: -1;
+}
+
+.glitter2 {
+  width: 5vw;
+  position: absolute;
+  top: 37rem;
+  left: -4em;
   z-index: -1;
 }
 
@@ -298,7 +320,7 @@ a:link,a:visited,a:hover,a:active {
   min-width: 280px;
   padding: 1.5rem 0;
   background-color: #f4d160;
-  border-radius: 2rem;
+  border-radius: 3rem;
   margin: 2.5rem auto 0 auto;
 }
 
@@ -337,8 +359,10 @@ a:link,a:visited,a:hover,a:active {
 
 .others {
   border: 0.3rem dotted #8ac4d0;
+  background-color: #fff;
   border-radius: 6rem;
-  padding: 8% 5%;
+  padding: 7% 5%;
+  color: #28527a;
 }
 
 .others_title{
@@ -354,13 +378,12 @@ a:link,a:visited,a:hover,a:active {
 
 .others li {
   width: 15%;
-  min-width: 8rem;
   line-height: 1;
   margin-bottom: 1rem;
 }
 
 .others img {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /*----------------#facility_map----------------------------------------------*/
@@ -390,7 +413,7 @@ a:link,a:visited,a:hover,a:active {
 /*----------------#Opening_hours----------------------------------------------*/
 
 #info {
-  background-color: rgba(138, 196, 208,0.25);
+  background-color: rgba(138, 196, 208,0.2);
   padding-bottom: 12rem;
 }
 
@@ -487,12 +510,13 @@ a:link,a:visited,a:hover,a:active {
 
 .free_pass {
   background-color: #fff;
-  width: 50%;
-  max-width: 600px;
-  max-height: 300px;
-  min-width: 360px;
+  width: 50vw;
+  height: calc(50vw * 0.45);
+  max-width: 55rem;
+  max-height: 22rem;
+  min-width: 36rem;
   position: relative;
-  padding: 3%;
+  padding: 3rem;
   box-shadow: 8px 8px #8ac4d0;
 }
 
@@ -513,7 +537,7 @@ a:link,a:visited,a:hover,a:active {
   line-height: 1.1;
   margin: 0.5rem 0 2rem 0;
   color: #8ac4d0;
-  background-image: linear-gradient(transparent 70%, #fbeeac 70%);
+  background-image: linear-gradient(transparent 70%, #fdec99 70%);
 }
 
 .free_pass span {
@@ -552,7 +576,7 @@ a:link,a:visited,a:hover,a:active {
   flex-direction: column;
 }
 
-/*----------------#footer----------------------------------------------*/
+/*----------------#access----------------------------------------------*/
 
 .ggmap1 iframe{
   width:100%;
@@ -612,9 +636,18 @@ a:link,a:visited,a:hover,a:active {
 
 footer {
   width: 100%;
-  height: 24rem;
+  height: 20rem;
   background-color: #28527a;
   color: #fff;
+  position: relative;
+  margin-top: 4rem;
+}
+
+footer .mask2 {
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  z-index: -1;
 }
 
 .footer_inner {
@@ -622,7 +655,7 @@ footer {
   justify-content: space-between;
   align-items:flex-start;
   margin: 0 auto;
-  padding: 3rem 5vw;
+  padding: 1rem 5vw;
 }
 
 .footer_icon ul {
@@ -630,10 +663,11 @@ footer {
   margin-top: 1.5rem;
 }
 
-.footer_nav li {
+.footer_nav li,.footer_nav a {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight:500;
   line-height: 1.7;
+  color: #fff;
 }
 
 .copyright {
@@ -704,12 +738,19 @@ footer {
     z-index: -1;
   }
 
-  .splush {
-    width: 10vw;
+  .glitter1 {
+    width: 12%;
     position: absolute;
-    top: 0rem;
-    left: 18em;
-    overflow: hidden;
+    top: 0;
+    left: 95%;
+    z-index: -1;
+  }
+  
+  .glitter2 {
+    width: 11%;
+    position: absolute;
+    top: 90%;
+    left: -2%;
     z-index: -1;
   }
 
@@ -717,7 +758,7 @@ footer {
     flex-wrap: wrap;
   }
 
-  .pickup_main img {
+  .pickup_main {
     margin-bottom: 4rem; 
   }
 
@@ -746,6 +787,10 @@ footer {
 
   .day_tour dd {
     margin-bottom: -1rem;
+  }
+
+  .free_pass {
+    height: 20%;
   }
 
   .free_pass h2 {
@@ -805,6 +850,11 @@ footer {
     height: 10rem;
   }
 
+  footer .mask2 {
+    top: -3rem;
+    left: 0;
+  }
+
   .footer_inner {
     padding-top: 1.4rem;
     height: 5.5rem;
@@ -824,6 +874,10 @@ footer {
 
 @media screen and (max-width:520px) {
   /*スマホ用のcssを記述*/
+.wrapper {
+  padding: 0 6%;
+}
+
   .pickup_main {
     margin-bottom: 8rem;
   }
@@ -853,29 +907,8 @@ footer {
     width: 20vw;
   }
 
-  .bubble1 {
-    width: 8vw;
-    position: absolute;
-    top: -9rem;
-    left: 85vw;
-    z-index: -1;
-  }
-
-  .bubble2 {
-    width: 10vw;
-    position: absolute;
-    top: -30rem;
-    left: -5rem;
-    z-index: -1;
-  }
-
-  .splush {
-    width: 11vw;
-    position: absolute;
-    top: 0rem;
-    left: 18em;
-    overflow: hidden;
-    z-index: -1;
+  .others li {
+    width: 30%;
   }
 
   .facility_map img,.day_tour,.night_tour,.free_pass {
@@ -891,10 +924,31 @@ footer {
     display: none;
   }
 
+  .day_tour dt{
+    background-color: #f4d160;
+    padding: 1rem 0 1rem 0;
+    font-size: 2rem;
+  }
+
+  .night_tour dt{
+    background-color: #28527a;
+    padding: 1rem 0 1rem 0;
+    font-size: 2rem;
+  }
+
+  .la-sun,.la-moon {
+    font-size: 2.5rem;
+    margin-right: 1.2rem;
+  }
+
   .month {
     margin-right: 0;
     margin-bottom: 1rem;
   }
+
+.free_pass {
+  padding: 2rem 0;
+}
 
   .free_pass h2 {
     font-size: 2.5rem;
@@ -925,35 +979,44 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .bubble1 {
-    width: 8vw;
-    position: absolute;
-    top: -7rem;
-    left: 80vw;
-    z-index: -1;
-  }
-
-  .bubble2 {
-    width: 10vw;
-    position: absolute;
-    top: -4rem;
-    left: -4rem;
-    z-index: -1;
-  }
-
-  .splush {
-    width: 9vw;
-    position: absolute;
-    top: 3rem;
-    left: 14.5em;
-  }
-
   .pop {
     min-width: 26rem;
   }
 
   .ib3 {
     display: inline-block;
+  }
+
+  .facility_map img {
+    min-width: 250px;
+  }
+
+  .day_tour {
+    min-width: 250px;
+  }
+
+  .night_tour {
+    min-width: 250px;
+  }
+
+  .free_pass {
+    min-width: 250px;
+  }
+
+  .free_pass h2 {
+    font-size: 2.3rem;
+  }
+
+  .free_pass span {
+    font-size: 2.3rem;
+  }
+
+  .address {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    margin-top: 3rem;
   }
 
 }
