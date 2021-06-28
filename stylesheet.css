@@ -54,7 +54,7 @@ a:link,a:visited,a:hover,a:active {
 }  
 
 .logo {
-  width: 160px;
+  width: 150px;
   line-height: 1;
 }
 
@@ -183,6 +183,23 @@ a:link,a:visited,a:hover,a:active {
     left: 0;
     margin-top: 0;
   }
+
+  .arrow {
+    position: relative;
+  }
+  .arrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 17px;
+    height: 17px;
+    border-top: 2px solid #28527a;
+    border-right: 2px solid #28527a;
+    transform: translateX(-50%) rotate(135deg);
+    margin-top: 3rem;
+  }
 }
 
 .top {
@@ -218,12 +235,10 @@ a:link,a:visited,a:hover,a:active {
   margin-right: 2rem;
 }
 
-.la-water {
+.la-water, .la-times{
   font-size: 3.5rem;
   color: #28527a;
-  margin-right: 2rem;
   display: none;
-  z-index: 10;
 }
 
 .top span {
@@ -726,6 +741,82 @@ footer .mask2 {
     display: none;
   }
 
+  .la-water, .la-times{
+    position: fixed;
+    top: 13px;
+    right: 13px;
+    height: 45px;
+    width:45px;
+    display: inline-block;
+    background-color: rgb(255, 253, 253, 0.6);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    z-index: 90;
+  }
+
+  .la-times {
+    visibility: collapse;
+  }
+
+  #menu-btn-check:checked ~ * .la-times {
+    visibility: visible;
+  }
+
+  #menu-btn-check:checked ~ * .la-water {
+    visibility: hidden;
+  }
+
+  .menu-content {
+    width: 80vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 100%;/*rightの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #28527a;
+    transition: all 0.5s right;/*アニメーション設定*/
+  }
+
+  #menu-btn-check:checked ~ .menu-content {
+    right: 0;/*メニューを画面内へ*/
+}
+  
+  .menu-content ul {
+    width: 100%;
+    height: 100%;
+    padding: 120px 15px 15px 20px;
+  }
+
+  .menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+  }
+
+  .menu-content ul li a {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 4;
+    color:#ffffff;
+    text-decoration: none;
+    padding-top: -3rem;
+    position: relative;
+  }
+
+  .menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+  }
+
+  #menu-btn-check {
+    display: none;
+}
+
   .nav ul {
     display: none;
   }
@@ -738,13 +829,6 @@ footer .mask2 {
   .inner li {
     position: fixed;
     z-index: 10;
-  }
-
-  .la-water {
-    display: inline-block;
-    background-color: rgb(255, 253, 253, 0.6);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
   }
 
   .copy {
@@ -803,6 +887,10 @@ footer .mask2 {
     margin-bottom: 4rem; 
   }
 
+.pickup_main img {
+  margin-bottom: 4rem;
+}
+
   .pickup_dolphin_pic,.pickup_jellyfish_pic {
     width: 70vw;
     margin-bottom: 4rem;
@@ -836,6 +924,10 @@ footer .mask2 {
 
   .free_pass h2 {
     font-size: 3rem;
+  }
+
+  #info {
+    padding-bottom: 8rem;
   }
 
   .article li {
