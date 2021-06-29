@@ -335,6 +335,7 @@ a:link,a:visited,a:hover,a:active {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
   margin-bottom: 8rem;
 }
 
