@@ -72,7 +72,6 @@ a:link,a:visited,a:hover,a:active {
 
 .wrapper {
   width:100%;
-  overflow: hidden;
   max-width: 1200px;
   padding: 0 4%;
   margin: 0 auto;
@@ -168,7 +167,7 @@ a:link,a:visited,a:hover,a:active {
   }
 
   .slide img {
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 
@@ -203,6 +202,7 @@ a:link,a:visited,a:hover,a:active {
   .arrow {
     position: relative;
   }
+
   .arrow::before {
     content: "";
     display: block;
@@ -270,7 +270,6 @@ a:link,a:visited,a:hover,a:active {
   display: flex;
   justify-content:space-evenly;
   margin: 7rem 0 0 0;
-  background-color: #f5f5f5;
 }
 
 .copy {
@@ -340,8 +339,8 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .pickup_dolphin_pic {
-  width: 45%;
   position: relative;
+  width: 45%;
 }
 
 .star2 {
@@ -352,32 +351,32 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .bubble1 {
-  width: 40vw;
+  width: 20vw;
   opacity: 30%;
   padding-right: calc(50vw - 50%);
   position: absolute;
-  top: 0rem;
-  right: 0rem;
+  top: 50vw;
+  right: -10vw;
   z-index: -1;
 }
 
 .bubble2 {
+  width: 35vw;
+  opacity: 30%;
+  padding-left: calc(50vw - 50%);
+  position: absolute;
+  top: 90vw;
+  left: -20vw;
+  z-index: -1;
+}
+
+.bubble3 {
   width: 30vw;
   opacity: 30%;
   padding-left: calc(50vw - 50%);
   position: absolute;
-  top: 0;
-  left: -6vw;
-  z-index: -1;
-}
-
-.splush {
-  width: 20%;
-  opacity: 30%;
-  padding-right: calc(50vw - 50%);
-  position: absolute;
-  top: 0;
-  right: 3%;
+  top: 120vw;
+  right: -10vw;
   z-index: -1;
 }
 
@@ -390,10 +389,10 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .glitter2 {
-  width: 5vw;
+  width: 6vw;
   position: absolute;
-  top: 37rem;
-  left: -4em;
+  bottom: 0;
+  left: -2vw;
   z-index: -1;
 }
 
@@ -671,6 +670,7 @@ a:link,a:visited,a:hover,a:active {
 
 .ggmap2 {
   display: none;
+  filter:grayscale(50%);-webkit-filter:grayscale(50%)
 }
 
 .address {
@@ -781,7 +781,7 @@ footer .mask2 {
   .la-water, .la-times{
     position: fixed;
     top: 5vw;
-    right: 10vw;
+    right: 5vw;
     height: 45px;
     width:45px;
     display: inline-block;
@@ -816,7 +816,7 @@ footer .mask2 {
   }
 
   #menu-btn-check:checked ~ .menu-content {
-    right: 0;/*メニューを画面内へ*/
+    right: 10vw;/*メニューを画面内へ*/
 }
   
   .menu-content ul {
@@ -882,13 +882,18 @@ footer .mask2 {
   }
 
   .bubble1 {
-    top: 110vw;
-    right: 0;
+    top: 100vw;
+    right: -10vw;
   }
 
   .bubble2 {
-    top: 170vw;
-    left: 0;
+    top: 150vw;
+    left: -10vw;
+  }
+
+  .bubble3 {
+    top: 210vw;
+    right: -10vw;
   }
 
   .splush {
@@ -1049,9 +1054,9 @@ footer .mask2 {
     letter-spacing: 1.2rem;
   }
 
-.wrapper {
-  padding: 0 6%;
-}
+  .wrapper {
+    padding: 0 6%;
+  }
 
   .pickup_main {
     margin-bottom: 8rem;
@@ -1121,9 +1126,9 @@ footer .mask2 {
     margin-bottom: 1rem;
   }
 
-.free_pass {
-  padding: 2rem 0;
-}
+  .free_pass {
+    padding: 2rem 0;
+  }
 
   .free_pass h2 {
     font-size: 2.5rem;
