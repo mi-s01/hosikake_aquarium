@@ -359,8 +359,8 @@ main{
   opacity: 30%;
   padding-right: calc(50vw - 50%);
   position: absolute;
-  top: 60vw;
-  right: 5vw;
+  top: 80vw;
+  right: 0;
   z-index: -1;
 }
 
@@ -369,19 +369,41 @@ main{
   opacity: 30%;
   padding-left: calc(50vw - 50%);
   position: absolute;
-  top: 90vw;
+  top: 130vw;
   left: 0;
   z-index: -1;
 }
 
 .bubble3 {
-  width: 9vw;
+  width: 12vw;
   opacity: 30%;
   padding-left: calc(50vw - 50%);
   position: absolute;
-  top: 120vw;
-  right: 4vw;
-  transform:rotate(45deg);
+  top: 150vw;
+  right: 6vw;
+  transform: rotate(35deg);
+  z-index: -1;
+}
+
+.bubble4 {
+  width: 12vw;
+  opacity: 30%;
+  padding-left: calc(50vw - 50%);
+  position: absolute;
+  top: 230vw;
+  right: 6vw;
+  transform: rotate(15deg);
+  z-index: -1;
+}
+
+.bubble5 {
+  width: 12vw;
+  opacity: 30%;
+  padding-left: calc(50vw - 50%);
+  position: absolute;
+  top: 250vw;
+  left: 0;
+  transform: rotate(45deg);
   z-index: -1;
 }
 
@@ -878,16 +900,26 @@ footer .mask2 {
   }
 
   .bubble1 {
-    top: 170vw;
+    top: 110vw;
   }
 
   .bubble2 {
-    top: 200vw;
+    top: 160vw;
   }
 
   .bubble3 {
     width: 14%;
-    top: 265vw;
+    top: 200vw;
+  }
+
+  .bubble4 {
+    width: 14%;
+    top: 280vw;
+  }
+
+  .bubble5 {
+    width: 14%;
+    top: 250vw;
   }
 
   .glitter1 {
@@ -1065,6 +1097,29 @@ footer .mask2 {
 
   .star1,.star2,.star3 {
     width: 20vw;
+  }
+
+  .bubble1 {
+    top: 180vw;
+  }
+
+  .bubble2 {
+    top: 250vw;
+  }
+
+  .bubble3 {
+    width: 14%;
+    top: 320vw;
+  }
+
+  .bubble4 {
+    width: 14%;
+    top: 400vw;
+  }
+
+  .bubble5 {
+    width: 14%;
+    top: 340vw;
   }
 
   .others li {
