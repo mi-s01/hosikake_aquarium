@@ -16,7 +16,7 @@ html {
 body {
   background-color: #f5f5f5;          /*背景を#f0f0f0*/
   color:   #28527a;                       /*文字色を #28527a*/
-  font-family: 'YuGothic','Yu Gothic','YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Calibri','Arial';  
+  font-family: 'TsukuARdGothic-Regular','YuGothic','Yu Gothic','YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Calibri','Arial';  
   font-size: 1.44rem;                    /*フォントサイズをデフォルト14pに*/  
   text-decoration: none;                /*下線等無し*/
   letter-spacing: 0.1rem;             
@@ -86,6 +86,10 @@ a:link,a:visited,a:hover,a:active {
   display: none;
 }
 
+main{
+  overflow: hidden;
+}
+
 /* ----------下からふわっと---------- */
 /* 画面外 */
 .fade-block {
@@ -101,6 +105,7 @@ a:link,a:visited,a:hover,a:active {
   visibility: visible;
   transform: translateY(0px);
 }   
+
 
 /*----------------#header----------------------------------------------*/
 
@@ -227,12 +232,10 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .inner {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
-
 }
 
 .inner ul {
@@ -382,15 +385,15 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .glitter1 {
-  width: 4vw;
+  width: 14%;
   position: absolute;
   top: 0rem;
-  left: 45rem;
+  right: -3rem;
   z-index: -1;
 }
 
 .glitter2 {
-  width: 6vw;
+  width: 12%;
   position: absolute;
   bottom: 0;
   left: -2vw;
@@ -783,9 +786,9 @@ footer .mask2 {
   .la-water, .la-times{
     position: fixed;
     top: 5vw;
-    right: 5vw;
-    height: 45px;
-    width:45px;
+    left: calc(100vw - (3% + 5rem));
+    height: 4.5rem;
+    width: 4.5rem;
     display: inline-block;
     background-color: rgb(255, 253, 253, 0.6);
     padding: 0.5rem;
@@ -857,16 +860,6 @@ footer .mask2 {
     display: none;
   }
 
-  .inner {
-    width: calc(100% - 4.5rem);
-    margin-left: 0;
-  }
-
-  .inner li {
-    position: fixed;
-    z-index: 10;
-  }
-
   .copy {
     font-size: 2.6rem;
   }
@@ -905,19 +898,11 @@ footer .mask2 {
   }
 
   .glitter1 {
-    width: 12%;
-    position: absolute;
-    top: 0;
-    left: 95%;
-    z-index: -1;
+    width: 14%;
   }
   
   .glitter2 {
-    width: 11%;
-    position: absolute;
-    top: 90%;
-    left: -2%;
-    z-index: -1;
+    width: 13%;
   }
 
   .pickup_dolphin,.pickup_jellyfish {
