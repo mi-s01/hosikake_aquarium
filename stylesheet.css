@@ -355,32 +355,33 @@ main{
 }
 
 .bubble1 {
-  width: 20vw;
+  width: 10vw;
   opacity: 30%;
   padding-right: calc(50vw - 50%);
   position: absolute;
-  top: 50vw;
-  right: -10vw;
+  top: 60vw;
+  right: 5vw;
   z-index: -1;
 }
 
 .bubble2 {
-  width: 35vw;
+  width: 15vw;
   opacity: 30%;
   padding-left: calc(50vw - 50%);
   position: absolute;
   top: 90vw;
-  left: -20vw;
+  left: 0;
   z-index: -1;
 }
 
 .bubble3 {
-  width: 30vw;
+  width: 9vw;
   opacity: 30%;
   padding-left: calc(50vw - 50%);
   position: absolute;
   top: 120vw;
-  right: -10vw;
+  right: 4vw;
+  transform:rotate(45deg);
   z-index: -1;
 }
 
@@ -821,7 +822,7 @@ footer .mask2 {
   }
 
   #menu-btn-check:checked ~ .menu-content {
-    right: 10vw;/*メニューを画面内へ*/
+    right: 0;/*メニューを画面内へ*/
 }
   
   .menu-content ul {
@@ -877,24 +878,16 @@ footer .mask2 {
   }
 
   .bubble1 {
-    top: 100vw;
-    right: -10vw;
+    top: 170vw;
   }
 
   .bubble2 {
-    top: 150vw;
-    left: -10vw;
+    top: 200vw;
   }
 
   .bubble3 {
-    top: 210vw;
-    right: -10vw;
-  }
-
-  .splush {
-    width: 30vw;
-    top: 200vw;
-    right: 0;
+    width: 14%;
+    top: 265vw;
   }
 
   .glitter1 {
