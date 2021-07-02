@@ -532,7 +532,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .day_tour {
@@ -612,6 +612,17 @@ main{
 .tax {
   font-size: 1rem;
 }
+
+.yen1000 {
+  font-size: 2rem;
+  text-decoration: 1.5px line-through ;
+}
+
+.yen500 {
+  font-size: 2.6rem;
+  color: #fca122;
+}
+
 
 #free_pass {
   background-image: linear-gradient(-45deg, #fff 25%, #8ac4d0 25%, #8ac4d0 50%, #fff 50%, #fff 75%, #8ac4d0 75%, #8ac4d0);
